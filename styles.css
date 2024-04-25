@@ -1,0 +1,102 @@
+header{
+  font-size: 25px;
+  font-weight: bold;
+}
+body{
+  background-color: #66b3ff;
+}
+p{
+  font-size: 17px;
+  line-height: 25px;
+}
+/* Navigation Bar Styles */
+#navbar {
+  background-color: #007bff; /* Background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%; /* Positioning the navbar to the left */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Header inside the navigation bar */
+#navbar header {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 20px; /* Padding */
+  text-decoration: none; /* Remove underline */
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+/* Links inside the navigation bar */
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the links inside the list items */
+#navbar ul li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 20px; /* Padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change the color of links on hover */
+#navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #1a237e;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+li{
+  line-height: 20px;
+}
+
+.main-section ul li{
+  line-height: 25px;
+}
+
+
+/* Style the active/current link */
+#navbar ul li.active a {
+  background-color: #555;
+  color: white;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 900px) {
+  #navbar {
+    position: static; /* Change position to static */
+    width: 100%; /* Change width to 100% */
+    height: auto; /* Change height to auto */
+  }
+
+  #main-doc {
+    margin-left: 0; /* Reset margin-left */
+  }
+}
